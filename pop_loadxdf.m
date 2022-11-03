@@ -67,7 +67,7 @@ EEG=[];
 if nargin < 1
 
 	% ask user
-	[filename, filepath] = uigetfile('*.xdf;*.xdfz', 'Choose an XDF file -- pop_loadxdf()');
+	[filename, filepath] = uigetfile('*.xdf;*.xdfz', 'Choose an XDF file -- pop_loadxdf()','Multiselect','on');
     drawnow;
 	if filename == 0 return; end;
 
